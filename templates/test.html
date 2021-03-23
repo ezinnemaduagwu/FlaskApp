@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+Weight: <input type="text" id="Weight" value=""><br />
+Mercury: <input type="text" id="Mercury" value=""><br />
+Venus: <input type="text" id="Venus" value=""><br />
+Mars: <input type="text" id="Mars" value=""><br />
+Jupiter: <input type="text" id="Jupiter" value=""><br />
+Saturn: <input type="text" id="Saturn" value=""><br />
+Uranus: <input type="text" id="Uranus" value=""><br />
+Neptune: <input type="text" id="Neptune" value=""><br />
+Pluto: <input type="text" id="Pluto" value=""><br />
+Sun: <input type="text" id="Sun" value=""><br />
+Moon: <input type="text" id="Moon" value=""><br />
+
+<button onclick="calculate()">Submit</button>
+
+<script>
+function calculate() {
+var weight = document.getElementById("Weight").value;
+document.getElementById("Mercury").value = Math.round(weight * 0.378);
+document.getElementById("Venus").value = Math.round(weight * 0.907);
+document.getElementById("Mars").value = Math.round(weight * 0.377);
+document.getElementById("Jupiter").value = Math.round(weight * 2.364);
+document.getElementById("Saturn").value = Math.round(weight * 0.916);
+document.getElementById("Uranus").value = Math.round(weight * 0.889);
+document.getElementById("Neptune").value = Math.round(weight * 1.125);
+document.getElementById("Pluto").value = Math.round(weight * 0.067);
+document.getElementById("Sun").value = Math.round(weight * 27.072);
+document.getElementById("Moon").value = Math.round(weight * 0.166);
+  
+}
+</script>
+
+</body>
+</html>
